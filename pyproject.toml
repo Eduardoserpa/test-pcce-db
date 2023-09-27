@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "test-pcce-db"
+version = "0.1.0"
+description = ""
+authors = ["Eduardo Serpa <edserpa1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "test-pcce-db"}]
+
+[tool.poetry.dependencies]
+python = "^3.11.3"
+coreapi = "2.3.3"
+django = "4.2.1"
+djangorestframework = "3.14.0"
+djangorestframework-simplejwt = "4.8.0"
+django-simple-history = "^3.2.0"
+djoser = "2.1.0"
+psycopg = "3.1.8"
+psycopg-binary = "3.1.8"
+python-decouple = "3.8"
+requests = "2.31.0"
+setuptools = "^68.2.2"
+drf-spectacular = "^0.26.3"
+django-cors-headers = "^4.2.0"
+djangorestframework-gis = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.17.4"
+black = "^23.7.0"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
