@@ -54,6 +54,79 @@ black = "^23.7.0"
 packages = ["teste_app", "teste_app_outro"]
 
 [project]
+name = "test-pcce-db"
+version = "2023.0.1"
+authors = [
+    {name = "Eduardo Serpa", email = "eduardoserpa347@gmail.com"},
+    "Eduardo Serpa <eduardoserpa347@gmail.com>"
+]
+maintainers = [
+
+]
+description = "Projeto de teste para criação de uma biblioteca de exemplo hospedada no Github com a ferramenta 'setuptools'."
+keywords = ["python", "django", "setuptools"]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Framework :: Django :: 4",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.11.3"
+dependencies = [
+    "django",
+    "requests",
+    'importlib-metadata; python_version>"3.11.3"',
+    "python (^3.11.3)",
+    "asgiref (3.6.0)",
+    "bcrypt (4.0.1)",
+    "coreapi (2.3.3)",
+    "django (4.2.1)",
+    "djangorestframework (3.14.0)",
+    "djangorestframework-simplejwt (4.8.0)",
+    "django-simple-history (^3.2.0)",
+    "djoser (2.1.0)",
+    "passlib (1.7.4)",
+    "psycopg (3.1.8)",
+    "psycopg-binary (3.1.8)",
+    "python-decouple (3.8)",
+    "requests (2.31.0)",
+    "setuptools (^68.2.2)",
+    "gunicorn (^20.1.0)",
+    "drf-spectacular (^0.26.3)",
+    "django-cors-headers (^4.2.0)",
+    "djangorestframework-gis (^1.0)",
+    "pylint (^2.17.4)",
+    "black (^23.7.0)",
+]
+requires-dists = [
+    "python (^3.11.3)",
+    "asgiref (3.6.0)",
+    "bcrypt (4.0.1)",
+    "coreapi (2.3.3)",
+    "django (4.2.1)",
+    "djangorestframework (3.14.0)",
+    "djangorestframework-simplejwt (4.8.0)",
+    "django-simple-history (^3.2.0)",
+    "djoser (2.1.0)",
+    "passlib (1.7.4)",
+    "psycopg (3.1.8)",
+    "psycopg-binary (3.1.8)",
+    "python-decouple (3.8)",
+    "requests (2.31.0)",
+    "setuptools (^68.2.2)",
+    "gunicorn (^20.1.0)",
+    "drf-spectacular (^0.26.3)",
+    "django-cors-headers (^4.2.0)",
+    "djangorestframework-gis (^1.0)",
+    "pylint (^2.17.4)",
+    "black (^23.7.0)",
+]
+
 dynamic = ["version"]
 
 [tool.setuptools_scm]
