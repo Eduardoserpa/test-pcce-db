@@ -54,7 +54,7 @@ black = "^23.7.0"
 packages = ["teste_app", "teste_app_outro"]
 
 [project]
-name = "test-pcce-db"
+name = "teste-pcce-db"
 authors = [
     {name = "Eduardo Serpa", email = "eduardoserpa347@gmail.com"},
 ]
