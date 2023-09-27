@@ -40,6 +40,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     "teste_app",
+    "teste_app_outro",
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -111,9 +112,25 @@ DATABASES = {
             'options': f'-c search_path={config("DB_SCHEMA_TEST_APP")}',
         },
     },
+
+    f'{config("DB_SCHEMA_TEST_APP_OUTRO")}': {
+        # 'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': config("POSTGRES_DB"),
+        'USER': config("POSTGRES_USER"),
+        'PASSWORD': config("POSTGRES_PASSWORD"),
+        'HOST': config("DB_HOST"),
+        'PORT': config("DB_PORT"),
+        'ATOMIC_REQUESTS': config("DB_ATOMIC_REQUESTS"),
+        # 'POSTGRES_HOST_AUTH_METHOD': config('POSTGRES_HOST_AUTH_METHOD'),
+        'OPTIONS': {
+            'options': f'-c search_path={config("DB_SCHEMA_TEST_APP_OUTRO")}',
+        },
+    },
 }
 DATABASE_ROUTERS = [
     'core.db_routers.TesteAppRouter',
+    'core.db_routers.TesteAppOutroRouter',
 ]
 
 # Password validation
