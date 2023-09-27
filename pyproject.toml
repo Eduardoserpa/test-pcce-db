@@ -52,3 +52,8 @@ black = "^23.7.0"
 
 [tool.setuptools]
 packages = ["teste_app", "teste_app_outro"]
+
+[project]
+dynamic = ["version"]
+
+[tool.setuptools_scm]
