@@ -77,11 +77,7 @@ classifiers = [
 ]
 requires-python = ">=3.11.3"
 dependencies = [
-    "django",
-    "requests",
-    'importlib-metadata; python_version>"3.11.3"',
-    "python (^3.11.3)",
-    "asgiref (3.6.0)",
+    "asgiref >= 3.6.0",
     "bcrypt (4.0.1)",
     "coreapi (2.3.3)",
     "django (4.2.1)",
