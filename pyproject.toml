@@ -1,24 +1,47 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "poetry-core"]
+build-backend = "setuptools.build_meta"
+
 [tool.poetry]
-name = "test-pcce-db"
-version = "0.1.0"
-description = ""
-authors = ["Eduardo Serpa <edserpa1@gmail.com>"]
+name = "test_pcce_db"
+version = "2023.0.1"
+authors = [
+    "Eduardo Serpa <eduardoserpa347@gmail.com>",
+]
+maintainers = [
+
+]
+description = "Projeto de teste para criação de uma biblioteca de exemplo hospedada no Github com a ferramenta 'setuptools'."
+keywords = ["python", "django", "setuptools"]
 readme = "README.md"
-packages = [{include = "test-pcce-db"}]
+license = "LICENSE"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Framework :: Django :: 4",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [tool.poetry.dependencies]
 python = "^3.11.3"
+asgiref = "3.6.0"
+bcrypt = "4.0.1"
 coreapi = "2.3.3"
 django = "4.2.1"
 djangorestframework = "3.14.0"
 djangorestframework-simplejwt = "4.8.0"
 django-simple-history = "^3.2.0"
 djoser = "2.1.0"
+passlib = "1.7.4"
 psycopg = "3.1.8"
 psycopg-binary = "3.1.8"
 python-decouple = "3.8"
 requests = "2.31.0"
 setuptools = "^68.2.2"
+gunicorn = "^20.1.0"
 drf-spectacular = "^0.26.3"
 django-cors-headers = "^4.2.0"
 djangorestframework-gis = "^1.0"
@@ -26,7 +49,3 @@ djangorestframework-gis = "^1.0"
 [tool.poetry.dev-dependencies]
 pylint = "^2.17.4"
 black = "^23.7.0"
-
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
