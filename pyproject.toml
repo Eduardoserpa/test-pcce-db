@@ -50,8 +50,11 @@ djangorestframework-gis = "^1.0"
 pylint = "^2.17.4"
 black = "^23.7.0"
 
-[tool.setuptools]
-packages = ["teste_app", "teste_app_outro"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["teste_app", "teste_app_outro"]
+exclude = ["core"]
+namespaces = false
 
 [project]
 name = "teste-pcce-db"
