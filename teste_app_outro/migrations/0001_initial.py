@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     dependencies = []
 
     operations = [
-        migrations.RunSQL('CREATE SCHEMA teste_app_outro;'),
+        migrations.RunSQL('CREATE SCHEMA test_app_outro;'),
         migrations.CreateModel(
             name="TestUserOutroModel",
             fields=[
